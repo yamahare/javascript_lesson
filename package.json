@@ -4,16 +4,47 @@
   "description": "フロント開発時のテンプレ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development gulp dev",
+    "build": "cross-env NODE_ENV=production gulp build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yamahare/frontend_template.git"
   },
   "author": "yamahare",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/yamahare/frontend_template/issues"
   },
-  "homepage": "https://github.com/yamahare/frontend_template#readme"
+  "homepage": "https://github.com/yamahare/frontend_template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.0.0",
+    "cssnano": "^4.1.10",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-filter": "^6.0.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-delete-original": "^0.2.3",
+    "gulp-rev-rewrite": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sizereport": "^1.2.1",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-optipng": "^7.0.0",
+    "imagemin-svgo": "^7.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-glob-entry": "^2.1.1",
+    "webpack-stream": "^5.2.1"
+  }
 }
