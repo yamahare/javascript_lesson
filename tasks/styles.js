@@ -11,7 +11,7 @@ const { paths } = require('./config')
 function styles() {
   // postcssのプラグイン
   const plugins = [
-    autoprefixer({ browsers: ["last 2 versions", "ie >= 11", "Android >= 4"] }),
+    autoprefixer(),
     cssnano({ autoprefixer: false })
   ];
   return gulp.src(paths.styles.src)
