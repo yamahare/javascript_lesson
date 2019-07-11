@@ -1,0 +1,19 @@
+{
+  "name": "frontend_template",
+  "version": "1.0.0",
+  "description": "フロント開発時のテンプレ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamahare/frontend_template.git"
+  },
+  "author": "yamahare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamahare/frontend_template/issues"
+  },
+  "homepage": "https://github.com/yamahare/frontend_template#readme"
+}
