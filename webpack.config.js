@@ -6,7 +6,7 @@ module.exports = {
   mode: env || 'development',
   entry: entry("./src/js/*.js"),
   output: {
-    path: path.resolve(__dirname,  './public/js/'),
+    path: path.resolve(__dirname,  './docs/js/'),
     filename: '[name].js',
   },
   // 拡張子が.jsのファイルはbabel-loaderを通してビルド(node_modulesは除外)

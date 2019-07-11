@@ -11,7 +11,7 @@ function reload(done){
 function serve(done){
   server.init({
     server: {
-      baseDir: './public'
+      baseDir: './docs'
     },
     open: 'external',
     port: 9000

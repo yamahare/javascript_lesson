@@ -2,7 +2,7 @@ const del = require('del')
 
 // 出力先のディレクトリを空にする
 function clean() {
-  return del(['public'])
+  return del(['docs'])
 }
 
 module.exports = clean

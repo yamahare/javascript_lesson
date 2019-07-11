@@ -1,5 +1,5 @@
 const ASSET_ROOT = 'src'
-const DEST_ROOT = 'public'
+const DEST_ROOT = 'docs'
 
 // 各ファイルのパス
 module.exports = {
