@@ -1,0 +1,15 @@
+doctype
+html(lang="ja")
+  head
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title 複数のブロックから当たりを引く
+    link(rel='stylesheet', href="css/style.css")
+  body
+    .container
+      include _nav.pug
+
+      main#main
+        block contents
+
+    block javascript
