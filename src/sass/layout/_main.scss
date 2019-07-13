@@ -19,9 +19,16 @@
   }
 }
 
-#header{
+.header{
   grid-area: header;
   background: #4e4e4e;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+
+  &__title{
+    font-weight: bold;
+  }
 }
 
 .sidenav {
@@ -31,7 +38,6 @@
   border-right: 1px solid;
 
   &__close{
-    // visibility: hidden;
     display: none;
   }
   &__list{
