@@ -18,14 +18,10 @@
       'footer';
   }
 }
-#container.js-open{
-  grid-template-columns: 200px 1fr;
-}
 
 #header{
   grid-area: header;
-  background: white;
-  border-bottom: 1px solid;
+  background: #4e4e4e;
 }
 
 .sidenav {
@@ -85,11 +81,4 @@
   grid-area: main;
   background: #eee;
   padding: 1rem;
-}
-
-#openBtn{
-  display: none;
-  @include mq(sp){
-    display: block;
-  }
 }
