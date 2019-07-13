@@ -26,8 +26,12 @@ export class TypingWords{
     return placeholder + this.word.substring(this.loc);
   }
 
-  moveNextLocation(){
+  setNextLocation(){
     this.loc++;
+  }
+
+  currentChar(){
+    return this.word[this.loc];
   }
 
   setNewRandomWord(){
