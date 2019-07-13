@@ -1,22 +1,14 @@
 'use strinct';
 
+import { TypingWords } from 'class/TypingWords.js'
+
 {
-  const words = [
-    'apple',
-    'sky',
-    'blue',
-    'test',
-    'pokemon',
-    'teepod',
-    'javascript',
-  ]
-  let word;
-  let loc;
   let score;
   let miss;
   const timeLimit = 10 * 1000;
   let startTime;
   let isPlaying = false;
+  let tw;
 
   const target = document.getElementById('target');
   const scoreLabel = document.getElementById('score');
@@ -24,11 +16,7 @@
   const timerLabel = document.getElementById('timer');
 
   function updateTarget() {
-    let placeholder = '';
-    for(let i=0; i < loc; i++){
-      placeholder += '_';
-    }
-    target.textContent = placeholder + word.substring(loc);
+    target.textContent = tw.getCurrentWord();
   }
 
   function showResult(){
@@ -57,13 +45,12 @@
   window.addEventListener('click', e=>{
     if(isPlaying === true){ return; }
 
-    loc = 0;
+    tw = new TypingWords();
     score = 0;
     miss = 0;
 
     scoreLabel.textContent = score;
     missLabel.textContent = miss;
-    word = words[Math.floor(Math.random() * words.length)];
 
     isPlaying = true;
     updateTarget();
@@ -74,14 +61,11 @@
   window.addEventListener('keyup', e=>{
     if(isPlaying !== true){ return; }
 
-    if(e.key === word[loc]){
-      loc++;
+    if(e.key === tw.loc){
+      tw.moveNextLocation();
       score++;
       scoreLabel.textContent = score;
-      if(loc == word.length){
-        word = words[Math.floor(Math.random() * words.length)];
-        loc = 0;
-      }
+      this.setNewRandomWord()
       updateTarget()
     }else{
       miss++;
