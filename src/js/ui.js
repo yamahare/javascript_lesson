@@ -6,9 +6,15 @@ document.addEventListener('DOMContentLoaded', e=>{
   const openBtn = document.getElementById('openBtn')
 
   openBtn.addEventListener('click', e=>{
+    openBtn.classList.toggle('js-open');
     container.classList.toggle('js-open');
     nav.classList.toggle('js-open');
     header.classList.toggle('js-open');
     main.classList.toggle('js-open');
+    if(openBtn.classList.contains('js-open')){
+      openBtn.textContent = '閉じる';
+    }else{
+      openBtn.textContent = '開く';
+    }
   })
 })
