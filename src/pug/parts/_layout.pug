@@ -6,10 +6,12 @@ html(lang="ja")
     title 複数のブロックから当たりを引く
     link(rel='stylesheet', href="css/style.css")
   body
-    .container
+    #container
       include _nav.pug
 
+      include _header.pug
       main#main
         block contents
 
+    script(src="js/ui.js")
     block javascript
