@@ -1,0 +1,11 @@
+// width
+$sp_width: 640px;
+$pc_width: 1120px;
+
+// breakpoints
+$breakpoints: (
+  'sp': 'screen and (max-width: #{$sp_width})',
+  'pc': 'screen and (max-width: #{$pc_width})',
+) !default;
+
+

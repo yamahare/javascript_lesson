@@ -29,7 +29,7 @@ export class HitOff {
       })
       frag.appendChild(boxDom);
     }
-    document.getElementById('main').appendChild(frag);
+    document.getElementById('boxwrapper').appendChild(frag);
   }
 
 }

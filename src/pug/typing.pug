@@ -1,0 +1,19 @@
+extends parts/_layout.pug
+
+block contents
+  #typing
+    p#target
+      | click to start!!
+    p.info
+      | Letter count:
+      span#score 0
+      br
+      | Miss count:
+      span#miss 0
+      br
+      | Time left:
+      span#timer 0
+
+
+block javascript
+  script(src="js/typing.js")

@@ -5,6 +5,10 @@
   grid-template-rows: 1fr;
   grid-template-columns: 200px 1fr;
   min-height: 100vh;
+
+  @include mq(sp){
+    grid-template-columns: 1fr;
+  }
 }
 .nav {
   grid-row: 1 / 1;
@@ -12,11 +16,19 @@
   background: white;
   padding: 1rem;
   border-right: 1px solid;
+
+  @include mq(sp){
+    display: none;
+  }
 }
 #main {
   grid-row: 1 / 1;
   grid-column: 2 / 3;
   background: #eee;
   padding: 1rem;
+
+  @include mq(sp){
+    grid-column: 1 / 1;
+  }
 }
 

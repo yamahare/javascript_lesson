@@ -1,0 +1,5 @@
+@mixin mq($bp: sp) {
+  @media #{map-get($breakpoints, $bp)} {
+    @content;
+  }
+}

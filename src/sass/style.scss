@@ -1,8 +1,10 @@
 @charset "utf-8";
 
 @import "foundation/reboot";
-@import "foundation/base";
+@import "foundation/variable";
+@import "foundation/mq";
 
-@import "layout/main";
+@import "layout/*";
 
 @import "object/component/*";
+@import "object/project/*";
