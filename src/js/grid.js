@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', e=>{
   const grid = document.getElementById('gridContainerCustom');
   let num = document.querySelector('[name="num"]').value;
   let updateSpan = document.querySelector('[name="updateSpan"]').value;
+  let blockSize = document.querySelector('[name="blockSize"]').value;
   const generateBtn = document.getElementById('generateBtn');
   const stopBtn = document.getElementById('stopBtn');
   const selectedColor = document.getElementsByClassName('selectedColorBlock')[0];
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', e=>{
     clearTimeout(generateLoopId);
     num = document.querySelector('[name="num"]').value;
     updateSpan = document.querySelector('[name="updateSpan"]').value;
+    blockSize = document.querySelector('[name="blockSize"]').value;
     generateLoop();
   });
 
@@ -40,10 +42,16 @@ document.addEventListener('DOMContentLoaded', e=>{
   }
   function generateBlocks(){
     grid.innerHTML = '';
+    grid.style.gridTemplateColumns = `repeat(auto-fit, minmax(${blockSize}px, 1fr))`;
+    grid.style.gridAutoRows = `${blockSize}px`;
+
     let frag = document.createDocumentFragment();
     for(let i=0; i<num; i++){
       let blockDom = document.createElement('div');
       blockDom.classList.add('block');
+      blockDom.style.width  = `${blockSize}px`;
+      blockDom.style.height = `${blockSize}px`;
+
       blockDom.style.backgroundColor = `hsl(${hue()}, ${saturation()}%, ${lightness()}%)`;
       blockDom.addEventListener('click', e=>{
         selectedColor.style.backgroundColor = e.target.style.backgroundColor;
