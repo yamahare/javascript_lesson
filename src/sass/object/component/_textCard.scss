@@ -1,0 +1,30 @@
+.textCardWrapper{
+  column-count: 2;
+  column-gap: 20px;
+
+  @include mq(sp){
+    column-count: 1;
+  }
+}
+.textCard{
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  -webkit-column-break-inside: avoid;
+
+
+  &:hover{
+    transition: all .3s ease-in-out;
+    box-shadow: 3px -2px 7px 0 rgba(0, 0, 0, 0.14), -2px 4px 7px 0px rgba(0,0,0,.14);
+  }
+  &:first-child {
+    height: 485px;
+  }
+  &:nth-child(2) {
+    height: 200px;
+  }
+  &:nth-child(3) {
+    height: 265px;
+  }
+}
