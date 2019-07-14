@@ -36,6 +36,10 @@
   background-color: #394263;
   padding: 1rem;
   border-right: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 
   &__close{
     display: none;
@@ -43,13 +47,22 @@
   &__list{
     list-style: none;
     padding: 0;
-    margin-top: 20px;
 
+    &--topic{
+      font-weight: bold;
+      color: #e6cbcb;
+      display: block;
+      margin-bottom: 1rem;
+    }
     &--item{
       a{
+        font-weight: normal;
         color: white;
         padding: 5px 10px;
         display: block;
+        border-bottom: 1px solid #a0a0a0;
+        text-decoration: none;
+
         &:hover{
           background-color: hsla(199, 98%, 48%, 0.15);
           cursor: pointer;
