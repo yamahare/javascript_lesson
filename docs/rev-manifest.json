@@ -1,7 +1,8 @@
 {
-  "css/style.css": "css/style-688e96ace1.css",
-  "js/main.js": "js/main-c39610c459.js",
-  "js/omikuji.js": "js/omikuji-34d824b0e7.js",
-  "js/typing.js": "js/typing-db9ff24e5d.js",
-  "js/ui.js": "js/ui-25e8ffe7d0.js"
+  "css/style.css": "css/style-36a4728027.css",
+  "js/grid.js": "js/grid-00b1ef1db8.js",
+  "js/main.js": "js/main-4279ab492d.js",
+  "js/omikuji.js": "js/omikuji-52562b3834.js",
+  "js/typing.js": "js/typing-8dbe4abfea.js",
+  "js/ui.js": "js/ui-957e6bbd2a.js"
 }

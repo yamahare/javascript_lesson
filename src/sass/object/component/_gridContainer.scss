@@ -1,0 +1,84 @@
+.gridContainer{
+  color: white;
+  background-color: white;
+  display: grid;
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  align-content: center;
+  // justify-items: center;
+  // align-items: center;
+  // grid-template-rows: 80px 80px 80px;
+  // grid-template-columns: 80px 80px 80px;
+  // grid-template: 80px 80px 80px / 80px 80px 80px;
+  // grid-template: repeat(3,80px) / repeat(auto-fit, minmax(80px, 1fr));
+  // grid-template: repeat(3,80px) / repeat(3,80px);
+  grid-template-columns: repeat(3,80px);
+  // grid-template: repeat(3,80px) / 100px 1fr 2fr;
+  // grid-row-gap: 10px;
+  // grid-column-gap: 10px;
+  // ↓
+  // grid-gap: 10px;
+
+  // grid-template-areas:
+  //   "header header header"
+  //   "main   .      sidenav"
+  //   "footer footer footer";
+  // ↓
+  // grid-template:
+  //   "header header header"  80px
+  //   "main   .      sidenav" 80px
+  //   "footer footer footer"  80px
+  //   / 80px  80px   80px;
+
+  // grid-auto-flow: dense;
+  // grid-auto-flow: dense column;
+  grid-auto-rows: 80px;
+  // grid-auto-columns: 80px;
+
+  .item1{
+    background-color: hsl(300, 80%, 30%);
+    // grid-row-start: 3;
+    // grid-row-end: 4;
+    // grid-column-start: 2;
+    // grid-column-end: 4;
+    // ↓
+    // grid-row: 3 / span 1;
+    // grid-column: 2 / span 2;
+    // ↓
+    // grid-area: 3 / 2 / 4 / 4;
+    // grid-area: header;
+  }
+  .item2{
+    background-color: hsl(300, 80%, 40%);
+    // grid-area: main;
+    // grid-row: span 2;
+    // grid-column: span 1;
+  }
+  .item3{
+    background-color: hsl(300, 80%, 50%);
+    // grid-area: sidenav;
+    // grid-row: span 1;
+    // grid-column: span 2;
+  }
+  .item4{
+    background-color: hsl(200, 80%, 30%);
+    // grid-area: 1 / -1 / 4 / -2;
+    // grid-area: footer;
+  }
+  .item5{
+    background-color: hsl(200, 80%, 40%);
+  }
+  .item6{
+    background-color: hsl(200, 80%, 50%);
+  }
+  .item7{
+    background-color: hsl(100, 80%, 30%);
+  }
+  .item8{
+    background-color: hsl(100, 80%, 40%);
+  }
+  .item9{
+    background-color: hsl(100, 80%, 50%);
+  }
+}
