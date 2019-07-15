@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', e=>{
   const start = document.getElementById('start');
   const stop = document.getElementById('stop');
   const reset = document.getElementById('reset');
+  const btn = document.getElementsByClassName('timerBtn');
 
   let startTime;
   let timeoutId;
@@ -61,4 +62,10 @@ document.addEventListener('DOMContentLoaded', e=>{
     timer.textContent = '00:00.000';
     elapsedTime = 0;
   })
+  for(let i=0; i < btn.length; i++){
+    btn[i].addEventListener('mousedown', () => btn[i].classList.add('pressed') )
+    btn[i].addEventListener('mouseup',   () => btn[i].classList.remove('pressed') )
+    btn[i].addEventListener('touchstart',() => btn[i].classList.add('pressed') )
+    btn[i].addEventListener('touchend',  () => btn[i].classList.remove('pressed') )
+  }
 })
