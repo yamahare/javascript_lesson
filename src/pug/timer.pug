@@ -3,7 +3,14 @@ extends parts/_layout.pug
 block contents
   h1 タイマー
   .timerContainer
+    .timeLimit
+      | 制限時間：
+      input(type="number" name="min" value="")
+      | Min
+      input(type="number" name="sec" value="")
+      | Sec
     #timer 00:00.000
+    #leftTime  
     .controls
       .timerBtn#start Start
       .timerBtn#stop Stop

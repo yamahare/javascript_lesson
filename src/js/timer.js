@@ -1,9 +1,15 @@
 document.addEventListener('DOMContentLoaded', e=>{
   const timer = document.getElementById('timer');
+  const letTime = document.getElementById('leftTime');
   const start = document.getElementById('start');
   const stop = document.getElementById('stop');
   const reset = document.getElementById('reset');
+
   const btn = document.getElementsByClassName('timerBtn');
+  let minLimit;
+  let secLimit;
+  let timeLimit;
+  const WARNING_SEC = 30 * 1000;
 
   let startTime;
   let timeoutId;
@@ -20,12 +26,24 @@ document.addEventListener('DOMContentLoaded', e=>{
     timeoutId = setTimeout(() => {
       countUp();
     }, 10)
+
+    if(timeLimit > 0){
+      if(timeLimit - d.getTime() <= 0){
+        timer.style.color = 'red';
+        letTime.textContent = '';
+      }
+      else if(timeLimit - d.getTime() <= WARNING_SEC){
+        letTime.textContent = `残り時間:${Math.ceil((timeLimit - d.getTime()) / 1000)}s`;
+      }
+    }
   }
 
   function setButtonStateInitial(){
     start.classList.remove('inactive');
     stop.classList.add('inactive');
     reset.classList.add('inactive');
+    timer.style.color = 'black';
+    letTime.textContent = '';
   }
   function setButtonStateRunning(){
     start.classList.add('inactive');
@@ -43,6 +61,9 @@ document.addEventListener('DOMContentLoaded', e=>{
       return;
     }
     setButtonStateRunning()
+    minLimit = document.querySelector('[name="min"]').value;
+    secLimit = document.querySelector('[name="sec"]').value;
+    timeLimit = (minLimit * 1000 * 60) + (secLimit * 1000)
     startTime = Date.now();
     countUp()
   })
