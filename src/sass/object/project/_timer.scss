@@ -21,16 +21,17 @@
     justify-content: center;
   }
   .timerBtn{
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
+    font-size: 2vw;
+    width: 10vw;
+    height: 10vw;
+    line-height: 10vw;
     background-color: #ddd;
     font-weight: bold;
     cursor: pointer;
     user-select: none;
     box-shadow: 4px 4px 0px 0px rgba(14, 14, 14, 0.44);
     border-radius: 50%;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     &.pressed{
       box-shadow: 1px 1px 0px 0px rgba(14, 14, 14, 0.44);
       margin-top: 5px;
