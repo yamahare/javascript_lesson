@@ -1,0 +1,16 @@
+extends parts/_layout.pug
+
+block contents
+  h1 Quiz
+  .quizContainer
+    #question
+    ul#choices
+    #nextBtn.disabled Next
+
+    section#result
+      p
+      a(href="") Replay?
+
+block javascript
+  script(src="js/quiz.js")
+

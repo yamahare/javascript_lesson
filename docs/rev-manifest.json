@@ -1,9 +1,10 @@
 {
-  "css/style.css": "css/style-0db6979015.css",
+  "css/style.css": "css/style-e0ffb994c8.css",
   "js/grid.js": "js/grid-bd5908ac4d.js",
-  "js/main.js": "js/main-cd9197748d.js",
+  "js/main.js": "js/main-5eee9e3643.js",
   "js/omikuji.js": "js/omikuji-52562b3834.js",
-  "js/timer.js": "js/timer-043eef837b.js",
-  "js/typing.js": "js/typing-bd3daa1f74.js",
-  "js/ui.js": "js/ui-20441ba947.js"
+  "js/quiz.js": "js/quiz-5ca87fedea.js",
+  "js/timer.js": "js/timer-3d3526bf3b.js",
+  "js/typing.js": "js/typing-8e5e80880c.js",
+  "js/ui.js": "js/ui-dbb47d0760.js"
 }
