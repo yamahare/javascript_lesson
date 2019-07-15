@@ -7,9 +7,9 @@ function change_hash_of_html_link () {
 
   const manifest = gulp.src(`${paths.manifest.dest}rev-manifest.json`)
 
-  return gulp.src(`${paths.templates.dest}*.html`)
+  return gulp.src(`${paths.manifest.dest}**/*.{html,css,js}`)
     .pipe(revRewrite({ manifest }))
-    .pipe(gulp.dest(paths.templates.dest))
+    .pipe(gulp.dest(paths.manifest.dest))
 }
 
 module.exports = change_hash_of_html_link
