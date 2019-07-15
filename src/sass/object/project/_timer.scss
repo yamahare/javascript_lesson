@@ -1,25 +1,26 @@
 .timerContainer{
-  width: 350px;
   font-family: 'Courier New', monospace;
-  font-size: 14px;
   text-align: center;
   background-color: white;
   padding: 15px;
   margin: 20px auto;
+  width: 100%;
 
   #timer{
-    background-color: #ddd;
-    height: 120px;
-    line-height: 120px;
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 10vw;
+    font-weight: bold;
+    background-color: white;
+    height: 10vw;
+    line-height: 10vw;
+    margin: 50px auto;
+    user-select: none;
   }
 
   .controls{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
-  .btn{
+  .timerBtn{
     width: 80px;
     height: 45px;
     line-height: 45px;
