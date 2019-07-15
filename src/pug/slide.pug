@@ -1,0 +1,20 @@
+extends parts/_layout.pug
+
+block contents
+  h1 スライド
+  .slideContainer
+    main
+      img
+
+    nav
+      ul
+        li#play Play
+        li#pause.hidden Pause
+        li#prev &lt;
+        li#next &gt;
+
+    ul.thumbnails
+
+block javascript
+  script(src="js/slide.js")
+
