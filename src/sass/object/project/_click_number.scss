@@ -1,0 +1,59 @@
+.clickNumContainer{
+  font-family: 'Courier New', sans-serif;
+  font-weight: bold;
+  width: 120px;
+  margin: 16px auto;
+
+  #board{
+    list-style: none;
+    margin: 0 0 8px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+
+    li{
+      color: white;
+      background-color: #00aaff;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 4px;
+      line-height: 40px;
+      text-align: center;
+      box-shadow: 0 4px 0 #0088cc;
+
+      &.pressed{
+        background-color: #ccc;
+        box-shadow: none;
+        margin-top: 9px;
+        margin-bottom: 1px;
+      }
+    }
+  }
+
+  #timer{
+    margin-bottom: 8px;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  #btn{
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    background: #f44336;
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+    box-shadow: 0 4px 0 #d14834;
+
+    &:active{
+      margin-top: 12px;
+      box-shadow: none;
+    }
+  }
+}
+

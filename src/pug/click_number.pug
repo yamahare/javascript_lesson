@@ -1,0 +1,13 @@
+extends parts/_layout.pug
+
+block contents
+  h1 数字クリック
+  .clickNumContainer
+    #timer 0.0
+    ul#board
+
+    #btn START
+
+block javascript
+  script(src="js/click_number.js")
+
