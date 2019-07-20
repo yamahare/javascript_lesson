@@ -1,5 +1,5 @@
 {
-  "css/style.css": "css/style-73918eee11.css",
+  "css/style.css": "css/style-75d7ed09bf.css",
   "image/bell.png": "image/bell-dcd064d7ed.png",
   "image/cherry.png": "image/cherry-f945af9eee.png",
   "image/pic00.png": "image/pic00-88badc3b61.png",
@@ -11,14 +11,16 @@
   "image/pic06.png": "image/pic06-747ea1f196.png",
   "image/pic07.png": "image/pic07-b518e826d4.png",
   "image/seven.png": "image/seven-d9c9f6d77c.png",
-  "js/click_number.js": "js/click_number-821230c78a.js",
-  "js/grid.js": "js/grid-1cc41a8ad7.js",
-  "js/main.js": "js/main-061e04ca20.js",
-  "js/omikuji.js": "js/omikuji-af32d9b327.js",
-  "js/quiz.js": "js/quiz-17b544ed15.js",
-  "js/slide.js": "js/slide-59923e3f29.js",
-  "js/slot.js": "js/slot-28c576d370.js",
-  "js/timer.js": "js/timer-c810fa5e68.js",
-  "js/typing.js": "js/typing-03ddc8786d.js",
-  "js/ui.js": "js/ui-9bfe2d508b.js"
+  "image/tapioka.png": "image/tapioka-1bee983e75.png",
+  "js/canvas.js": "js/canvas-32c9e756a1.js",
+  "js/click_number.js": "js/click_number-b938215f98.js",
+  "js/grid.js": "js/grid-0be4339b41.js",
+  "js/main.js": "js/main-1122083098.js",
+  "js/omikuji.js": "js/omikuji-f039723f54.js",
+  "js/quiz.js": "js/quiz-3c049d5df7.js",
+  "js/slide.js": "js/slide-f382ed8890.js",
+  "js/slot.js": "js/slot-8b843048fb.js",
+  "js/timer.js": "js/timer-dd6766b2a4.js",
+  "js/typing.js": "js/typing-03ad17c016.js",
+  "js/ui.js": "js/ui-e413bae4f0.js"
 }
