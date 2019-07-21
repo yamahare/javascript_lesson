@@ -1,0 +1,24 @@
+extends parts/_layout.pug
+
+block contents
+  h1 Chart.js
+  .chartjsContainer
+    .chartWrapper
+      canvas#lineChart
+        Canvas not supported.
+    .chartWrapper
+      canvas#barChart
+        Canvas not supported.
+    .chartWrapper
+      canvas#mixChart
+        Canvas not supported.
+    .chartWrapper
+      canvas#radarChart
+        Canvas not supported.
+    .chartWrapper
+      canvas#doughnutChart
+        Canvas not supported.
+
+block javascript
+  script(src="js/chart.js")
+

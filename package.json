@@ -47,5 +47,8 @@
     "webpack-cli": "^3.3.5",
     "webpack-glob-entry": "^2.1.1",
     "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "chart.js": "^2.8.0"
   }
 }
