@@ -1,0 +1,17 @@
+extends parts/_layout.pug
+
+block contents
+  h1 CSSアニメーション
+  .animationContainer
+    .box.box1
+    .box.box2
+    .box.box3
+
+    .button#move 移動
+
+    .spinBox
+    .button#spin スピン
+
+block javascript
+  script(src="js/animation.js")
+
