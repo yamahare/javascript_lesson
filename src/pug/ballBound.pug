@@ -1,0 +1,10 @@
+extends parts/_layout.pug
+
+block contents
+  h1 ボールバウンド
+  .ballBoundContainer
+    canvas(id='mycanvas' width='500' height='250')
+      | canvas対応ブラウザを使用してください
+
+block javascript
+  script(src="js/ballBound.js")
