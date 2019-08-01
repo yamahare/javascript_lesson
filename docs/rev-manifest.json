@@ -1,5 +1,5 @@
 {
-  "css/style.css": "css/style-0c862c5750.css",
+  "css/style.css": "css/style-6f5ce81d14.css",
   "image/bell.png": "image/bell-dcd064d7ed.png",
   "image/cherry.png": "image/cherry-f945af9eee.png",
   "image/pic00.png": "image/pic00-88badc3b61.png",
@@ -15,15 +15,16 @@
   "js/animation.js": "js/animation-5d8b85c7ab.js",
   "js/ballBound.js": "js/ballBound-8837306803.js",
   "js/canvas.js": "js/canvas-dad40899b7.js",
-  "js/chart.js": "js/chart-d69709bec2.js",
+  "js/chart.js": "js/chart-4a9cf2728d.js",
   "js/click_number.js": "js/click_number-0a1f13910b.js",
   "js/grid.js": "js/grid-d6d1011b4c.js",
-  "js/main.js": "js/main-6ea58aaccb.js",
-  "js/omikuji.js": "js/omikuji-670847daf0.js",
-  "js/quiz.js": "js/quiz-7d2ad67a6b.js",
-  "js/slide.js": "js/slide-2097a0f760.js",
-  "js/slot.js": "js/slot-969afd7155.js",
-  "js/timer.js": "js/timer-9f981016fb.js",
-  "js/typing.js": "js/typing-01d9339800.js",
-  "js/ui.js": "js/ui-1c3438aeba.js"
+  "js/main.js": "js/main-3edcb32ccb.js",
+  "js/maze.js": "js/maze-a8dfb64554.js",
+  "js/omikuji.js": "js/omikuji-8b0e90d575.js",
+  "js/quiz.js": "js/quiz-0fdb2242cd.js",
+  "js/slide.js": "js/slide-4eb236c42e.js",
+  "js/slot.js": "js/slot-b4028b0ab2.js",
+  "js/timer.js": "js/timer-59db7b775c.js",
+  "js/typing.js": "js/typing-0f72808a6f.js",
+  "js/ui.js": "js/ui-a45d877df7.js"
 }

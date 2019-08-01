@@ -1,0 +1,25 @@
+.mazeContainer{
+  font-family: "Century Gothic";
+  font-size: 16px;
+  text-align: center;
+  margin: 20px auto;
+
+  #mycanvas{
+    background-color: #AAEFFF;
+  }
+
+  .btn{
+    margin: 3px auto;
+    width: 200px;
+    padding: 5px;
+    background-color: #00AAFF;
+    color: #FFFFFF;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
+

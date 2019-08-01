@@ -1,0 +1,12 @@
+extends parts/_layout.pug
+
+block contents
+  h1 迷路
+  .mazeContainer
+    canvas(id='mycanvas' )
+      | canvas対応ブラウザを使用してください
+    #reset.btn RESET
+
+block javascript
+  script(src="js/maze.js")
+
